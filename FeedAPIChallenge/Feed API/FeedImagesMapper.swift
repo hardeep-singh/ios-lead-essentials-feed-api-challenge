@@ -9,6 +9,9 @@
 import Foundation
 
 final class FeedImagesMapper {
+	
+	private init() {}
+	
 	private struct Root: Codable {
 		let items: [Item]
 		var images: [FeedImage] {

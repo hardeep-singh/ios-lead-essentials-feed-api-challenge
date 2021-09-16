@@ -32,7 +32,7 @@ final class FeedImagesMapper {
 		}
 	}
 
-	private static var OK_200: Int { 200 }
+	private static var OK_200: Int { return 200 }
 
 	static func map(_ data: Data, from response: HTTPURLResponse) -> RemoteFeedLoader.Result {
 		guard response.statusCode == OK_200,
